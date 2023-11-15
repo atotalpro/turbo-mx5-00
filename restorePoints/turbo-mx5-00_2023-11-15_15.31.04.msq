@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <msq xmlns="http://www.msefi.com/:msq">
-<bibliography author="TunerStudio MS Ultra 3.1.08 - EFI Analytics, Inc." tuneComment="" writeDate="Wed Nov 15 15:31:08 CST 2023"/>
+<bibliography author="TunerStudio MS Ultra 3.1.08 - EFI Analytics, Inc." tuneComment="&lt;html&gt;Restore Point: TunerStudio settings before accepting Controller values in a Difference Report. - &lt;br&gt;" writeDate="Wed Nov 15 15:31:04 CST 2023"/>
 <versionInfo fileFormat="5.0" firmwareInfo="MS3+1.4.0+release+++++20150709+19%3A51BST+%28c%29+JSM%2FKC+********" nPages="19" signature="MS3 Format 0523.15 "/>
 <page>
 <pcVariable name="tsCanId">"0"</pcVariable>
@@ -423,7 +423,7 @@
 <constant name="pwmidle_freq_pin">"Idle"</constant>
 <constant name="boost_ctl_settings_freq">"26Hz"</constant>
 <constant name="boost_ctl_settings_on">"On"</constant>
-<constant name="boost_ctl_settings_cl">"Open-loop"</constant>
+<constant name="boost_ctl_settings_cl">"Closed-loop"</constant>
 <constant name="boost_ctl_settings_invert_new">"Normal"</constant>
 <constant name="boost_ctl_pins">"Boost"</constant>
 <constant digits="0" name="boost_ctl_Kp" units="%">0.0</constant>
@@ -460,7 +460,7 @@
 <constant name="pwmidle_cl_opts_initvaluetable">"Use last value"</constant>
 <constant name="pwmidle_cl_opts_initval_clt">"Use CLT"</constant>
 <constant name="pwmidle_cl_opts_display_pid">"Advanced"</constant>
-<constant name="boost_ctl_flags">"Basic Mode"</constant>
+<constant name="boost_ctl_flags">"Setup Mode"</constant>
 <constant name="boost_ctl_flags2">"Basic Mode"</constant>
 <constant name="idleveadv_to_pid_idleadv">"Use normal activation"</constant>
 <constant name="idleveadv_to_pid_idleve">"Use normal activation"</constant>
@@ -6104,30 +6104,30 @@
 </page>
 <page number="15" size="1024">
 <constant cols="1" digits="0" name="qfrtfielddata" rows="256">
-         0.0 
-         0.0 
-         0.0 
-         0.0 
-         0.0 
-         0.0 
-         0.0 
-         0.0 
-         0.0 
-         0.0 
-         0.0 
-         0.0 
-         0.0 
-         0.0 
-         0.0 
-         0.0 
-         0.0 
-         0.0 
-         0.0 
-         0.0 
-         0.0 
-         0.0 
-         0.0 
-         0.0 
+         16384.0 
+         16390.0 
+         8203.0 
+         16400.0 
+         16402.0 
+         16406.0 
+         16408.0 
+         16416.0 
+         16432.0 
+         8262.0 
+         8270.0 
+         8271.0 
+         8272.0 
+         8274.0 
+         8275.0 
+         8278.0 
+         8279.0 
+         8286.0 
+         8331.0 
+         8444.0 
+         16720.0 
+         16722.0 
+         8543.0 
+         8679.0 
          0.0 
          0.0 
          0.0 
@@ -6751,45 +6751,45 @@
          0.0 
       </constant>
 <constant cols="1" digits="0" name="UNALLOCATED_TOP_15" rows="41" units="RAW">
-         235.0 
+         234.0 
          52.0 
-         92.0 
+         222.0 
          65.0 
          10.0 
          238.0 
-         196.0 
+         198.0 
          136.0 
          211.0 
-         131.0 
-         29.0 
+         195.0 
+         60.0 
          43.0 
-         14.0 
+         46.0 
          6.0 
          194.0 
          184.0 
-         53.0 
+         37.0 
          43.0 
          46.0 
          4.0 
-         12.0 
+         28.0 
          214.0 
          195.0 
-         8.0 
+         0.0 
          130.0 
          2.0 
          68.0 
-         131.0 
+         195.0 
          40.0 
-         44.0 
+         76.0 
          129.0 
          243.0 
-         171.0 
+         170.0 
          14.0 
          159.0 
-         22.0 
-         141.0 
+         85.0 
+         157.0 
          84.0 
-         21.0 
+         29.0 
          105.0 
          254.0 
       </constant>
