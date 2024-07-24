@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <msq xmlns="http://www.msefi.com/:msq">
-<bibliography author="TunerStudio MS Ultra 3.2.03 - EFI Analytics, Inc." tuneComment="&lt;html&gt;Restore Point: User Requested Save of Settings - &#10;" writeDate="Mon Jul 22 13:23:51 PDT 2024"/>
+<bibliography author="TunerStudio MS Ultra 3.2.03 - EFI Analytics, Inc." tuneComment="&lt;html&gt;Restore Point: Before loading Restore Point turbo-mx5-00_2024-07-13_21.40.52 to turbo-mx5-00 - &lt;br&gt;Restore Point: User Requested Save of Settings - &lt;br&gt;" writeDate="Sun Jul 14 15:13:46 PDT 2024"/>
 <versionInfo fileFormat="5.0" firmwareInfo="MS3+1.4.0+release+++++20150709+19%3A51BST+%28c%29+JSM%2FKC+********" nPages="19" signature="MS3 Format 0523.15 "/>
 <page>
 <pcVariable name="tsCanId">"CAN ID 0"</pcVariable>
@@ -66,7 +66,7 @@
 <constant digits="1" name="max_coil_dur" units="ms">3.0</constant>
 <constant digits="1" name="max_spk_dur" units="ms">1.0</constant>
 <constant digits="0" name="crankingRPM" units="RPM">300.0</constant>
-<constant digits="1" name="triggerOffset" units="deg">1.0</constant>
+<constant digits="1" name="triggerOffset" units="deg">5.0</constant>
 <constant digits="1" name="TpsBypassCLTRevlim" units="TPS %">90.0</constant>
 <constant digits="1" name="map0" units="%">10.0</constant>
 <constant digits="1" name="mapmax" units="%">260.0</constant>
@@ -250,7 +250,7 @@
 <constant digits="1" name="knk_maxmap" units="kPa">350.0</constant>
 <constant digits="0" name="knk_lorpm" units="rpm">700.0</constant>
 <constant digits="0" name="knk_hirpm" units="rpm">8000.0</constant>
-<constant digits="0" name="triggerTeeth" units="teeth">36.0</constant>
+<constant digits="0" name="triggerTeeth" units="teeth">60.0</constant>
 <constant digits="0" name="No_Miss_Teeth" units="teeth">2.0</constant>
 <constant digits="0" name="pwmidle_shift_open_time" units="s">3.0</constant>
 <constant digits="1" name="Miss_ang" units="deg BTDC">80.0</constant>
@@ -274,7 +274,7 @@
 <constant name="spk_config_trig2">"Single wheel with missing tooth"</constant>
 <constant name="spk_config_trig2l">"Falling edge"</constant>
 <constant name="spk_config_resetcam">"Cam"</constant>
-<constant name="spk_mode0">"Miata 36-2"</constant>
+<constant name="spk_mode0">"Miata 99-05"</constant>
 <constant name="spk_mode3_trim">"Off"</constant>
 <constant name="spk_mode3_tach3">"MS3X Cam"</constant>
 <constant name="spk_mode3_hirespol">"Normal"</constant>
@@ -2359,9 +2359,9 @@
       </constant>
 <constant cols="1" digits="1" name="NoiseFilterLen" rows="4" units="usec">
          200.0 
-         40.0 
-         18.0 
-         13.0 
+         200.0 
+         200.0 
+         200.0 
       </constant>
 <constant cols="1" digits="0" name="VariableLagTPSBins" rows="4" units="%/sec">
          3.0 
@@ -3611,8 +3611,8 @@
 <page number="6" size="1024">
 <constant cols="16" digits="1" name="veTable1" rows="16" units="%">
          48.0 49.0 48.0 36.3 38.4 39.0 31.6 18.4 13.4 6.7 6.6 9.6 13.6 20.3 29.7 54.5 
-         48.0 53.0 53.0 59.5 57.5 59.9 59.3 55.2 56.6 52.5 44.6 42.4 45.6 45.9 49.0 58.0 
-         48.0 53.0 54.0 70.8 67.0 64.8 62.3 59.6 61.9 63.6 71.0 73.7 71.0 66.2 59.7 57.0 
+         48.0 54.0 53.0 59.5 57.5 59.9 59.3 55.2 56.6 52.5 44.6 42.4 45.6 45.9 49.0 58.0 
+         48.0 55.0 56.0 70.8 67.0 64.8 62.3 59.6 61.9 63.6 71.0 73.7 71.0 66.2 59.7 57.0 
          48.6 54.0 58.0 74.3 67.3 65.8 64.8 63.1 64.4 70.8 76.6 75.1 78.4 70.7 64.4 66.8 
          51.0 54.0 64.4 78.5 72.0 67.2 67.9 67.2 66.2 70.7 79.4 80.5 88.2 79.1 73.7 67.9 
          56.0 55.0 66.0 79.5 76.5 69.9 69.9 70.6 67.9 74.8 81.2 84.6 89.2 83.9 79.2 72.7 
@@ -6105,7 +6105,6 @@
 <constant cols="1" digits="0" name="qfrtfielddata" rows="256">
          16384.0 
          16390.0 
-         16392.0 
          8203.0 
          16400.0 
          16402.0 
@@ -6128,6 +6127,7 @@
          16722.0 
          8543.0 
          8679.0 
+         0.0 
          0.0 
          0.0 
          0.0 
@@ -6751,43 +6751,43 @@
       </constant>
 <constant cols="1" digits="0" name="UNALLOCATED_TOP_15" rows="41" units="RAW">
          234.0 
-         52.0 
-         220.0 
-         65.0 
+         53.0 
+         222.0 
+         193.0 
          42.0 
          110.0 
-         196.0 
-         136.0 
+         198.0 
+         248.0 
          211.0 
-         131.0 
+         195.0 
          45.0 
          43.0 
          14.0 
          6.0 
          194.0 
          184.0 
-         37.0 
-         43.0 
+         53.0 
+         35.0 
          46.0 
          4.0 
          28.0 
          214.0 
          199.0 
-         16.0 
+         136.0 
          130.0 
-         2.0 
-         68.0 
-         195.0 
-         40.0 
+         90.0 
          76.0 
+         199.0 
+         40.0 
+         12.0 
          129.0 
          243.0 
          171.0 
-         14.0 
-         159.0 
+         46.0 
+         223.0 
          87.0 
-         141.0 
-         84.0 
+         157.0 
+         116.0 
          157.0 
          105.0 
          254.0 
